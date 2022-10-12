@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+}
+
+a,
+h1,
+p,
+h5 {
+  color: #edf0f1 !important;
+}
+
+.card {
+  padding-top: 20px;
+}
+
+.nav-link:hover {
+  opacity: 100% !important;
+  color: beige !important;
+}
+
+.navbar .nav-link.active::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: beige;
+  height: 2px;
+  animation: appear 0.07s linear;
+}
+
+.navbar .nav-link {
+  position: relative;
+}
+
+.btn-abt {
+  color: rgb(32, 32, 32) !important;
+  background-color: beige;
+}
+
+.btn-sm {
+  color: beige !important;
+  background-color: rgb(32, 32, 32);
+}
+
+.btn-sm:hover {
+  color: rgb(32, 32, 32) !important;
+}
+
+.btn-abt:hover {
+  color: beige !important;
+}
+
+.jumbotron {
+  position: relative;
+
+  color: #edf0f1;
+  background-color: rgb(32, 32, 32) !important;
+}
+
+#profile-1 {
+  width: 30%;
+  height: auto;
+  padding: 25px 0;
+}
+
+.card {
+  background-color: rgb(32, 32, 32);
+}
+
+.col-md-4 {
+  padding: 0 !important;
+}
+
+.pic-proj {
+  position: relative;
+}
+
+.pic-proj img {
+  transition: 0.2s ease-in;
+}
+
+.pic-proj:hover img {
+  opacity: 30%;
+}
+
+.pic-proj:hover .proj-text {
+  opacity: 1;
+}
+
+.proj-text p {
+  font-size: 1em;
+}
+.proj-text h5 {
+  font-size: 1.3em;
+}
+
+.proj-text {
+  overflow: hidden;
+  top: 35%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #profile-1 {
+    display: none !important;
+  }
+
+  .style-3 {
+    background-image: rgb(32, 32, 32) !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #profile-1 {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .proj-text p,
+  h5 {
+    font-size: 80%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .proj-text p,
+  h5 {
+    font-size: 100%;
+  }
+}
+
+@media all and (max-width: 298px) {
+  .proj-text p,
+  h5 {
+    font-size: 80%;
+  }
+}
